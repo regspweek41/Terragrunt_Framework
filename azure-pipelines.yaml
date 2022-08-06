@@ -19,7 +19,7 @@ trigger:
 - azure-main
 
 pool:
-  name: Terraform-Pool-VM
+  name: Uat-agent
   
 variables:
   - group: Terraform-verify
