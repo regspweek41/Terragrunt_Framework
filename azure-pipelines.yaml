@@ -98,7 +98,7 @@ stages:
   - job: Validate
     steps:
 
-    - script: terragrunt run-all validate --terragrunt-working-dir ./terraform/azure/infra --terragrunt-source-update
+    - script: terragrunt run-all validate --terragrunt-working-dir live/dev --terragrunt-source-update
       displayName: 'Run terragrunt run-all validate'
       env:
          ARM_CLIENT_ID: $(ARM_CLIENT_ID)
