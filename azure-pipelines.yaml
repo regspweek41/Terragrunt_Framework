@@ -22,7 +22,7 @@ pool:
   name: Uat-agent
   
 variables:
-  - group: Terraform-verify
+  - group: Terragrunt-verify
   
 stages:
 # ---------------------------------------------------------------------------------------------------------------------
