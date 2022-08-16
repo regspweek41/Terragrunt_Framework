@@ -37,7 +37,7 @@ dependency "resource_group" {
 inputs = {
 
   location            = local.location
-  resource_group_name = dependency.resource_group.outputs.resource_name
+  name = dependency.resource_group.outputs.resource_name
   vmname              = local.vmName
   
   
