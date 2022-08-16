@@ -1,6 +1,3 @@
-provider "azurerm" {
-   features {}
-}
 
 resource "azurerm_virtual_network" "main" {
   name                = "${var.prefix}-network"
