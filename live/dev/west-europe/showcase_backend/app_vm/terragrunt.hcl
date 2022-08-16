@@ -40,8 +40,5 @@ dependency "resource_group" {
 inputs = {
  
   location            = local.location
-  resource_group_name = dependency.resource_group.outputs.resource_name
-  
-
-  
+  RG = dependency.resource_group.outputs.resource_name
 }

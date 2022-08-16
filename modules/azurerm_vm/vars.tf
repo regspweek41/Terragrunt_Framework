@@ -6,6 +6,6 @@ variable "location" {
   default = "West Europe"
 }
 
-variable "RG" {
+variable "resource_group_name" {
   default = "RG"
 }
