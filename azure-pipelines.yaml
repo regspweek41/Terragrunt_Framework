@@ -16,7 +16,7 @@
 #   - virtual-machine
 #   - vnet
 trigger:
-- azure-main
+- master
 
 pool:
   name: Uat-agent
