@@ -19,7 +19,7 @@ trigger:
 - master
 
 pool:
-  name: Uat-agent
+  name: Mainpro-jumphost
   
 variables:
   - group: Terragrunt-verify
