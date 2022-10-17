@@ -1,5 +1,5 @@
 locals {
-  provider_version = "2.1.0"
+  provider_version = "3.27.0"
 }
 
 # Inject the remote backend configuration in all the modules that includes the root file without having to define them in the underlying modules 
