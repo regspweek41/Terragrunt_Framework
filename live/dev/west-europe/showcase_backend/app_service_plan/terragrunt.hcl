@@ -40,9 +40,8 @@ inputs = {
   resource_group_name = dependency.resource_group.outputs.resource_name
 
   kind = "linux"
-
-  sku_tier = "Basic"
-  sku_size = "B1"
+  sku_tier = "Standard"
+  sku_size = "S1"
 
   # This variable must be set to true if App Service Plan kind is linux
   reserved = true
