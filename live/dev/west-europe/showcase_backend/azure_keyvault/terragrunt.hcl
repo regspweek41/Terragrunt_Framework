@@ -11,7 +11,7 @@ locals {
   env      = local.env_vars.locals.env
   suffix   = local.env_vars.locals.suffix
   project  = local.global_vars.locals.project
-  VaultName   = "7pmbatchvault9868"
+  VaultName   = "pmbatchvault9868"
 }
 
 # Specify the path to the source of the module

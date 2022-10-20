@@ -1,3 +1,4 @@
+
 # # Configuration for App Service Plan used by the backend api
 
 # locals {
