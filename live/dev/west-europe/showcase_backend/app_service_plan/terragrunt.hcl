@@ -41,8 +41,10 @@ inputs = {
 
   kind = "linux"
 
-  sku_tier = "Basic"
-  sku_size = "B1"
+  sku {
+    tier = "Standard"
+    size = "S1"
+  }
 
   # This variable must be set to true if App Service Plan kind is linux
   reserved = true
