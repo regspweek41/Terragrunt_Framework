@@ -163,11 +163,7 @@ stages:
 
   condition: and(succeeded(), in(variables['Build.SourceBranch'], 'refs/heads/azure-main', 'refs/heads/develop', 'refs/heads/master'))
 
-  variables:
-    ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/azure-main') }}:
-      environment: 'terraform-dev-env'
-    ${{ if ne(variables['Build.SourceBranch'], 'refs/heads/azure-main') }}:
-      environment: 'dev'
+  
   jobs:
     - job: "waitForValidation"
       displayName: "Wait > Wait for manual appoval"
@@ -246,7 +242,7 @@ stages:
         - task: ManualValidation@0
           timeoutInMinutes: "1440" # task times out in 1 day
           inputs:
-            notifyUsers: AKanojia@zuelligpharma.com
+            notifyUsers: 
             instructions: "There are resources being destroyed as part of this deployment, please review the output of Terraform plan before approving."
             onTimeout: "reject"
     - job: "TerraformApprove"
