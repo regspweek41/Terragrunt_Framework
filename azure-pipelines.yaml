@@ -19,7 +19,7 @@ trigger:
 - master
 
 pool:
-  name: Mainpro-jumphost
+  name: Devops-Agent-8pmbatch
   
 variables:
   - group: Terragrunt-verify
