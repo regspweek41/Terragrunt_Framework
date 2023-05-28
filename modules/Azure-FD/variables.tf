@@ -11,7 +11,7 @@ variable "Front_door" {
 }
 
 variable "frontend_with_disabled_waf_rules" {}
-variable env {}
+
 variable backend_domain {
   type = list
 }
