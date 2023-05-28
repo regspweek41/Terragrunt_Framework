@@ -12,3 +12,4 @@ backend_domain = [
   "uksouth.example.com",
 ]
 custom_domain_name = "example.com"
+env = "uat"
