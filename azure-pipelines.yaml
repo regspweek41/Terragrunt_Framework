@@ -19,7 +19,7 @@ trigger:
 - master
 
 pool:
-  name: Devops-Agent-8pmbatch
+  name: ado-201-pool
   
 variables:
   - group: Terragrunt-verify
