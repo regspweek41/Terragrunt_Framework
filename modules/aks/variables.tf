@@ -1,14 +1,17 @@
+
 variable "aks_name" {
-  type        = string
-  description = "key vault name"
+  type    = string
+  
 }
+
 
 variable "resource_group_name" {
   type        = string
-  description = "resource_group_name"
+  description = "resource group name"
+
 }
 
 variable "location" {
-  type        = string
-  description = "location"
+  type    = string
+  
 }
