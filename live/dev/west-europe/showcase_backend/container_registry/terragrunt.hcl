@@ -34,7 +34,7 @@ dependency "resource_group" {
 
 # Set inputs to pass as variables to the module
 inputs = {
-  container_registry_name = local.container_registry_name
+  container_registry_name = "containrgtry546"
   location                = local.location
   resource_group_name     = dependency.resource_group.outputs.resource_name
   sku                     = "Basic"
