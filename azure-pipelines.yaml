@@ -226,7 +226,7 @@ stages:
 - stage: Destroy
   displayName: "Terraform Destroy All: Manual Approval"
   dependsOn: Plan
-  condition: and(succeeded(), in(variables['Build.SourceBranch'], 'refs/heads/azure-main', 'refs/heads/develop'))
+  condition: and(succeeded(), in(variables['Build.SourceBranch'], 'refs/heads/azure-main', 'refs/heads/master'))
   variables:
     ${{ if eq(variables['Build.SourceBranch'], 'refs/heads/azure-main') }}:
         environment: 'terraform-dev-env'
